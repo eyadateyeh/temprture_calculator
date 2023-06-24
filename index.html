@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/app.css">
+    <title>temprture calculator</title>
+</head>
+
+<body>
+    <div class="title">
+        <h1>Celsius-Fahrenheit-Kelvin Calculator</h1>
+    </div>
+    <div class="app">
+        <div id="calc">
+            <div class="display-c">
+                <!-- input area for all temprtures -->
+                <div class="input-area">
+                    <div class="Celsius-div">
+                        <p>Celsius:</p>
+                        <input class="Celsius" onchange="calculateTemprture(1)">  <!--for Celsius change we send 1 to our function-->
+                    </div>
+                    <div class="Fahrenheit-div">
+                        <p>Fahrenheit:</p>
+                        <input class="Fahrenheit" onchange="calculateTemprture(2)"> <!--for Fahrenheit change we send 2 to our function-->
+                    </div>
+                    <div class="Kelvin-div">
+                        <p>Kelvin:</p>
+                        <input class="Kelvin" onchange="calculateTemprture(3)">  <!--for Kelvin change we send 3 to our function-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js\functions.js"></script>
+</body>
+
+</html>
