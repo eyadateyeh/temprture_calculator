@@ -1,14 +1,14 @@
 import { celsiusInput, fahrenhetInput,kelvinInput } from "./functions.js"
 
-$(".Celsius").change(function(){
+$(".Celsiusbtn").click(function(){
   celsiusInput(parseFloat(document.getElementsByClassName('Celsius')[0].value))
 });
 
-$(".Fahrenheit").change(function(){
+$(".Fahrenheitbtn").click(function(){
   fahrenhetInput(parseFloat(document.getElementsByClassName('Fahrenheit')[0].value))
 });
 
-$(".Kelvin").change(function(){
+$(".Kelvinbtn").click(function(){
   kelvinInput(parseFloat(document.getElementsByClassName('Kelvin')[0].value))
 });
 
